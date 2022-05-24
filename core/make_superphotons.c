@@ -240,7 +240,7 @@ void sample_photon(int i, int j, int k, double t, double dt, int type,
       radG[i][j][k][mu] -= 1 / (dt * dx[1] * dx[2] * dx[3]) * kphys_to_num *
                            tmp[n]->w * tmp[n]->Kcov[2][mu];
     }
-#if RADIATION == RADTYPE_NEUTRINOS
+#if RADIATION == RADTYPE_NEUTRINOS // 🚀
     {
       double gamma, alpha, ucon0;
       mhd_gamma_calc(P[i][j][k], &(ggeom[i][j][CENT]), &gamma);
